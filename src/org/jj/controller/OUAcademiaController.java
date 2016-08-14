@@ -15,6 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
  * I dont want to make any change which would disable this application to run on 
  * Google app engine. 
  *  
+ *  
+ *  08/14/2016 01:09 Modifying Home Controller to learn collaboration
  */
 @Controller
 public class OUAcademiaController {
@@ -38,6 +40,7 @@ public class OUAcademiaController {
 		System.out.println("Fetching home page info");
 		// Logic goes here
 		System.out.println("Fetching home page info complete");
+		System.out.println("Updating Home to demo collaboration");
 		return "success";
 	}
 
