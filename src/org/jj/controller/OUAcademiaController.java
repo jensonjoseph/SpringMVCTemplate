@@ -8,6 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+/*
+ * This class is the controller class for the SPRING MVC TEMPLATE project
+ * There is no database connectivity as of now. 
+ * I will be adding the connectivity soon as a singleton implementation. 
+ * I dont want to make any change which would disable this application to run on 
+ * Google app engine. 
+ *  
+ */
 @Controller
 public class OUAcademiaController {
 
@@ -34,7 +42,8 @@ public class OUAcademiaController {
 	}
 
 	@RequestMapping(value = "/student.do")
-	public ModelAndView ouStudent(HttpServletRequest req, HttpServletResponse res) {
+	public ModelAndView ouStudent(HttpServletRequest req,
+			HttpServletResponse res) {
 		/*
 		 * Should load student page(student.jsp) with no records. Records will
 		 * be populated by a separate call , specifically to fetch data from DB
@@ -48,7 +57,8 @@ public class OUAcademiaController {
 	}
 
 	@RequestMapping(value = "/fetchStudentPageInfo.do", method = RequestMethod.POST)
-	public String fetchStudentInfo(HttpServletRequest req, HttpServletResponse res) {
+	public String fetchStudentInfo(HttpServletRequest req,
+			HttpServletResponse res) {
 
 		System.out.println("Fetching student page info");
 		// Logic goes here
@@ -62,7 +72,8 @@ public class OUAcademiaController {
 	}
 
 	@RequestMapping(value = "/faculty.do")
-	public ModelAndView ouFaculty(HttpServletRequest req, HttpServletResponse res) {
+	public ModelAndView ouFaculty(HttpServletRequest req,
+			HttpServletResponse res) {
 		/*
 		 * Should load faculty page(faculty.jsp) with no records. Records will
 		 * be populated by a separate call , specifically to fetch data from DB
@@ -76,7 +87,8 @@ public class OUAcademiaController {
 	}
 
 	@RequestMapping(value = "/fetchFacultyPageInfo.do", method = RequestMethod.POST)
-	public String fetchFacultyInfo(HttpServletRequest req, HttpServletResponse res) {
+	public String fetchFacultyInfo(HttpServletRequest req,
+			HttpServletResponse res) {
 
 		System.out.println("Fetching faculty page info");
 		// Logic goes here
@@ -111,6 +123,7 @@ public class OUAcademiaController {
 	public String testBlockUI(HttpServletRequest req, HttpServletResponse res) {
 		ModelAndView model = new ModelAndView("student");
 		System.out.println("BLOCK UI testing start");
+		// Below code is added to display the working of block UI
 		for (int i = 0; i < 100000; i++) {
 			for (int j = 0; j < 100000; j++) {
 				int k = 0;
