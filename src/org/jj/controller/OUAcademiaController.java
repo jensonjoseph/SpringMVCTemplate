@@ -17,6 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
  *  
  *  
  *  08/14/2016 01:09 Modifying Home Controller to learn collaboration
+ *  Updated by JensonJo
  */
 @Controller
 public class OUAcademiaController {
