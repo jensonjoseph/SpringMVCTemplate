@@ -18,6 +18,9 @@ import org.springframework.web.servlet.ModelAndView;
  *  
  *  08/14/2016 01:09 Modifying Home Controller to learn collaboration
  *  Updated by JensonJo
+ *  
+ *  08/15/2016 14:12 Created workspace on office laptop with user jensonjoseph
+ *  Testing if changes made could be pushed back to git hub. 
  */
 @Controller
 public class OUAcademiaController {
